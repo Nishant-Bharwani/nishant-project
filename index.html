@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Intern project</title>
+</head>
+
+
+<!-- #a6a6a6 = gry -->
+<!-- #cee8ff = light bluwe  -->
+
+<body>
+
+    <div class="container-fluid navigation-bar">
+        <nav class="navbar navbar-expand-lg" style="min-height: 10vh;">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-class" href="#" style="font-size: 2rem;">LOGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #000;">
+                    <!-- <span class="navbar-toggler-icon" style="color: #000;"></span> -->
+                    <i class="fas fa-bars" style="font-size: 2rem;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" aria-current="page" href="#">Companies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Holdings</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#" tabindex="-1" aria-disabled="true">Order Book</a>
+                        </li>
+
+                        <div class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="./images/prj.jpg" alt="" class="profile-pic"></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid main-content row">
+        <div class="dashboard col-md-2">
+            <div class="headline d-flex align-items-center justify-content-between">
+                <div class="admin-dashboard">Admin Dashboard</div>
+                <div class="toggler-icon"><i class="fas fa-bars"></i></div>
+            </div>
+
+            <div class="manage">
+                <div class="heading text-muted">KYC Managment</div>
+                <div class="button-view">View requests</div>
+            </div>
+            <div class="manage">
+                <div class="heading text-muted">Shares Managment</div>
+                <div class="button-view">Buy Orders</div>
+            </div>
+            <div class="manage">
+                <div class="heading text-muted">Role Managment</div>
+                <div class="button-view">Manage role</div>
+            </div>
+
+        </div>
+        <div class="assign-role col-md-7" style="padding: 5rem 3rem;">
+            <div class="big-heading text-muted">Assign Role</div>
+
+
+            <div class="role-stats-box">
+                <div class="role-features row">
+                    <div class="role-name text-muted col-3">KYC Checker</div>
+                    <div class="role-options col-9">
+                        <div class="btn-edit edit-btn text-primary">Edit Role</div>
+                        <div class="btn-edit delete-btn text-danger">Delete Role</div>
+                        <input type="text" placeholder="Name / Email" class="nameEmail" />
+                        <div class="add-role-btn">
+                            <button type="button" class="btn btn-primary">Add User</button>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <caption class="text-muted" style="text-align: left;">Enrolled users</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Email ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Assigned on</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">sudharshansaxena2409@gmail.com</th>
+                                <td>
+                                    <div class="btn-edit text-primary">Sudharshan</div>
+                                </td>
+                                <td>24-06</td>
+                                <td class="d-flex align-items-center justify-content-between">
+                                    <div class="btn-edit text-primary">Update Password</div>
+                                    <div class="btn-edit text-danger">Remove</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">mohitagarwal1432@gmail.com</th>
+                                <td>
+                                    <div class="btn-edit text-primary">Mohit</div>
+                                </td>
+                                <td>14-02</td>
+                                <td class="d-flex align-items-center justify-content-between">
+                                    <div class="btn-edit text-primary">Update Password</div>
+                                    <div class="btn-edit text-danger">Remove</div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="role-stats-box">
+                <div class="role-features row">
+                    <div class="role-name text-muted col-3">distributor Managment</div>
+                    <div class="role-options col-9">
+                        <div class="btn-edit edit-btn text-primary">Edit Role</div>
+                        <div class="btn-edit delete-btn text-danger">Delete Role</div>
+                        <input type="text" placeholder="Name / Email" class="nameEmail" />
+                        <div class="add-role-btn">
+                            <button type="button" class="btn btn-primary">Add User</button>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <caption class="text-muted" style="text-align: left;">Enrolled users</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Email ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Assigned on</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">sudharshansaxena2409@gmail.com</th>
+                                <td>
+                                    <div class="btn-edit text-primary">Sudharshan</div>
+                                </td>
+                                <td>24-06</td>
+                                <td class="d-flex align-items-center justify-content-between">
+                                    <div class="btn-edit text-primary">Update Password</div>
+                                    <div class="btn-edit text-danger">Remove</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">mohitagarwal1432@gmail.com</th>
+                                <td>
+                                    <div class="btn-edit text-primary">Mohit</div>
+                                </td>
+                                <td>14-02</td>
+                                <td class="d-flex align-items-center justify-content-between">
+                                    <div class="btn-edit text-primary">Update Password</div>
+                                    <div class="btn-edit text-danger">Remove</div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="role-create-box col-md-3">
+            <div>
+                <div class="heading text-muted">Make a new role</div>
+                <input type="text" placeholder="Role Title" class="role-title" />
+
+
+                <div class="function-box">
+                    <div class="info heading text-muted">Choose Functions</div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Edit KYC</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Add User</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Edit User</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Make distributor</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="add-role-btn">
+                <button type="button" class="btn btn-primary">Add Role</button>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <div class="assign-role"></div>
+    <div class="add-role"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>

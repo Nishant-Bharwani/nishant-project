@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --grey-color: #a6a6a6;
+}
+
+.navigation-bar {
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 7px -8px #000;
+    /* min-height: 10vh; */
+}
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: 750;
+    color: var(--grey-color);
+}
+
+.navbar-nav {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.logo-class {
+    font-size: 2rem;
+    color: var(--grey-color);
+    font-weight: 600;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+}
+
+.main-content {
+    padding: 0;
+    height: 100vh;
+}
+
+.dashboard {
+    padding: 0;
+    width: 100%;
+    height: 90vh;
+    border-right: 1px solid var(--grey-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    width: 100%;
+    padding: 0;
+    height: 10vh;
+    border-bottom: 1px solid var(--grey-color);
+    display: flex;
+    align-items: center;
+}
+
+.admin-dashboard {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 650;
+    cursor: default;
+}
+
+.toggler-icon {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.manage {
+    margin-top: 1rem;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button-view {
+    font-size: 1.5rem;
+    padding: 1rem 3.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button-view:hover {
+    background-color: #cee8ff;
+}
+
+.role-create-box {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-left: 1px solid var(--grey-color);
+    justify-content: space-between;
+}
+
+.role-title {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+::placeholder {
+    color: var(--grey-color);
+}
+
+.function-box {
+    margin: 2rem 0rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+label input {
+    margin-right: 1rem;
+}
+
+.add-role-btn button {
+    font-weight: 600;
+    width: 12rem;
+}
+
+.assign-role {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.big-heading {
+    font-size: 4.5rem;
+}
+
+.role-stats-box {
+    margin-top: 2rem;
+    height: auto;
+}
+
+.role-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.role-name {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.btn-edit {
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.role-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nameEmail {
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+table {
+    border-left: none;
+    border-right: none;
+}
+
+button {
+    font-weight: 600;
+}
+
+tbody,
+thead {
+    color: var(--grey-color);
+}
+
+th {
+    font-size: 1.5rem;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
+@media(max-width: 1100px) {
+    * {
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    * {
+        font-size: 45%;
+    }
+}
+
+@media(max-width: 1100px) {
+    .dashboard,
+    .assign-role,
+    .role-create-box {
+        height: auto;
+    }
+}
